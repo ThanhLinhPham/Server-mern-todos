@@ -1,0 +1,54 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "thanhlinh98",
+    "password": "21041998"
+}
+
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+
+{
+    "username": "linhpham98",
+    "password": "21041998"
+}
+
+###
+POST http://localhost:5000/api/post
+Content-Type: application/json
+Authorization: hris eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTIzZDllNmE3MjRkMjMyZjRmZjBjZGEiLCJpYXQiOjE2MzAyMzEzNTF9.PzJftrC6sa00-vbhuROIj-1x6MbtJyr5HmfucTu0KuE
+
+{
+    "title": "my 5 post",
+    "description": "5",
+    "url": "google.com",
+    "status": "TO LEARN"
+}
+
+### 
+GET http://localhost:5000/api/post 
+Authorization: hris eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTI2NjgxNjNhZjM2NjJjNzhmMzhhY2YiLCJpYXQiOjE2Mjk5MDY5NjZ9.5UtB_96xDAJmROWdW4021ptuDEr5R954qYZnidaibuQ
+
+###
+PUT http://localhost:5000/api/post/612674c71368a13d10f55817
+Content-Type: application/json
+Authorization: hris eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTI2NjgxNjNhZjM2NjJjNzhmMzhhY2YiLCJpYXQiOjE2Mjk5MDY5NjZ9.5UtB_96xDAJmROWdW4021ptuDEr5R954qYZnidaibuQ
+
+{
+    "title": "my one hundred post",
+    "description": "reactjs",
+    "url": "reactjs.com",
+    "status": "LEARNING"
+}
+
+
+###
+DELETE  http://localhost:5000/api/post/612674cd1368a13d10f55819
+Content-Type: application/json
+Authorization: hris eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTI2NjgxNjNhZjM2NjJjNzhmMzhhY2YiLCJpYXQiOjE2Mjk5MDY5NjZ9.5UtB_96xDAJmROWdW4021ptuDEr5R954qYZnidaibuQ
+
